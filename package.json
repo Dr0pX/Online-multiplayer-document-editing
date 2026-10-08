@@ -1,0 +1,14 @@
+{
+  "name": "online-multiplayer-document-editing",
+  "private": true,
+  "scripts": {
+    "build:shared": "pnpm --filter @omde/shared build",
+    "dev:api": "pnpm --filter api dev",
+    "dev:collab": "pnpm --filter collab dev",
+    "dev:web": "pnpm --filter web dev",
+    "build:api": "pnpm --filter api build",
+    "build:collab": "pnpm --filter collab build",
+    "build:web": "pnpm --filter web build",
+    "postinstall": "pnpm --filter @omde/shared build"
+  }
+}
